@@ -1,0 +1,178 @@
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+ .search-box{
+    
+    position:absolute;
+    top: 28%;
+    left: 2%;
+    transform: translate(0%,-100%);
+    background-color: darkgray;
+    height: 25px;
+     border-radius: 25px;
+    padding: 10px;
+
+    
+}
+
+.search-box:hover > .search-txt{
+    width: 400px;
+    padding: 0 6px
+    
+}
+.search-box:hover > .search-btn{
+   background-color: white;
+    
+}
+.search-btn{
+    color: aliceblue;
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2f3640;
+  
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    
+    
+}
+.search-txt{
+    
+    border: none;
+    background: none;
+    outline:nonoe;
+    float:right;
+    padding: 0px;
+    color:white;
+    font-size: 16px;
+    transition: .5s;
+    line-height: 25px;
+    width:0px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+ 
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:deepskyblue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+</style>
+</head>
+<body><div class="title">
+<h3>The Strombreaker</h3>
+</div>
+ <center>
+     <div class="drop-down">
+<ul>
+	
+	<li><a>follow us </a>
+		<ul>
+			<li><a>On Instagram</a></li>
+			<li><a>On facebook</a></li>
+		</ul>
+	</li>
+  
+   
+     <li><a>categories</a>
+     <ul>   <li><a>Action</a></li>
+            <li><a>Thriller</a></li>
+            <li><a>Romance</a></li>
+         <li><a>Comady</a></li>
+         <li><a>Sci-fiction</a></li>
+
+        </ul>
+    </li>
+     <li><a>Languege</a>
+        <ul>
+            <li><a>Gujrati</a></li>
+            <li><a>Hindi</a></li>            
+            <li><a>English</a></li>
+            <li><a>Tamil</a></li>
+        </ul>
+    </li>
+     
+	<li><a href="login.html">log in</a>
+		
+	</li>
+       <li><a>home</a></li>
+     <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Enter your wish">
+        <a class="search-btn" href="#"><i class="fa fa-search"></i></a>
+        
+        </div>
+       
+</ul>
+     <br>
+     </div>
+     </center>
+     
+     
+ 
+
+
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="manu.html" >Movies Manu</a>
+  <a href="marvel.html">MARVEL Universe</a>
+    <a href="AnimatedMovies.html">Animated Movies</a>
+    <a href="tvseriese.html">TV series(English)</a>
+    <a href="tvseriesh.html">TV Series(Hindi)</a>
+  <a href="aboutus.html">About Us</a>
+        
+
+</div>
+
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Explore your Fantasy</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+ 
+</body>
+</html>

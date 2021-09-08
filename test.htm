@@ -1,0 +1,57 @@
+<html>
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+    *{
+      font-family: 'Indie Flower', cursive;
+    }
+    form{
+    background-color: crimson;
+    font-family: cursive;
+    font-size: 50px
+        }
+        input{
+            display:block;
+            font-family: 'Indie Flower', cursive;
+            font-size: 50px;
+        }
+        .s{
+            display: inline;
+        }
+        .t{
+          font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+        }
+        </style>
+
+
+</head>
+<body>
+    <center>
+        <h1 style="background-color: cornflowerblue">Percentage Finder</h1>
+        <p><mark><strong>Hello</strong></mark></p>
+<form id="form">
+    Enter your marks:<input type="number" id="marks" value="M" placeholder="Enter your marks" required><br>
+    Enter total Marks:<input type="number" id="tmarks" value="T" placeholder="Enter your Total" required><br>
+    Percentage is: <input type="text" readonly="readonly" id="per" value=" "><br>
+    <input class="s" type="button" id="sub" value="Find Percentage" onclick="findper(marks.value,tmarks.value)">
+    <input class="s" type="reset" id="Res">
+    </form>
+<script class="t" type="text/javascript" language="javascript">
+    function findper(m,tm)
+    {
+        var p;
+        p=(m*100)/tm;
+        if(p>35)
+            document.getElementById("per").value=p;
+            //document.write("Percentage is "+p+"% <br>");
+        else
+            alert("You are Failed");
+    }
+    </script>
+
+        </center>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        h1
+        {font-size: 100px;}
+        body{background-image: url(dark%20blue.jpg)}
+        h2{font-size: 50px;}
+        form{font-size: 25px;}
+    </style>
+    <script>
+    function buy(){
+        var b=document.getElementById("s1").value;
+        var a;
+        a=b*99;
+        document.getElementById("f1").innerHTML="The final Price is  "+a;
+    }
+    </script>
+    </head>
+    <body>
+    <h1 style="color:white" >buy Now hurry</h1>
+        <h2 style="color:white" >per piece the amount of dvd is :- 99 Rs only</h2>
+        <form style="color:white" name="form1" >
+        Select the number od dvd you want to buy:
+            <select id="s1" onChange="buy()" >
+            <option value="1" name="n1" >1</option>
+                <option value="2" name="n2">2</option>
+                <option value="3" name="n3">3</option>
+                <option value="4" name="n4">4</option>
+                <option value="5" name="n5">5</option>
+                
+                </select>
+            <p id="f1"></p>
+            
+            <button ><a href="INDEX.html">Goto home</a></button>
+        </form>
+        
+        
+    </body>
+</html>
